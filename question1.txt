@@ -1,0 +1,55 @@
+using System;   
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace question1
+{
+    class Program
+    {
+        public static void factorial(int x)
+        {
+            int celtic = 1;
+            for (int i = x; i >= 1; i--)
+                celtic *= i;
+            Console.WriteLine($"{x}!={celtic}");
+        }
+        static void Main(string[] args)
+        {
+            //adadi az voroudi gerefte factorial an ra chap konid
+            // use for
+            //Console.WriteLine("Enter a number");
+            //int num = int.Parse(Console.ReadLine());
+            //int celtic = 1;
+            //for (int i = num; i >= 1; i--)
+            //    celtic *= i;
+            //Console.WriteLine($"{num}!={celtic}");
+
+            //Console.ReadKey();
+
+            // use while
+            //int num = int.Parse(Console.ReadLine());
+            //int celtic = 1;
+            //int i=num;
+            //while ( i >= 1)
+            //    celtic *= i--;
+            //Console.WriteLine($"{num}!={celtic}");
+            //Console.ReadKey();
+
+            //with method 
+
+
+            Console.WriteLine("Enter a number");
+            int num = int.Parse(Console.ReadLine());
+            factorial(num);
+            Console.ReadKey();
+
+
+
+
+
+
+        }
+    }
+}
